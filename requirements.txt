@@ -1,0 +1,5 @@
+PIL
+streamlit
+opencv-python
+numpy
+keras
