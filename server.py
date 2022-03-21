@@ -58,6 +58,6 @@ if image_file is not None:
     pred = new_model.predict(image.reshape(1, 256, 64, 1))
     decoded = K.get_value(K.ctc_decode(pred, input_length=np.ones(pred.shape[0])*pred.shape[1], greedy=True)[0][0])
     print("Extracted Text: "+num_to_label(decoded[0]))
-    st.subheader(num_to_label(decoded[0]))
+    st.subheader("Extracted Text: "+num_to_label(decoded[0]))
 
 st.write("\n\n\n\n Made By:\nSourabh : 2019UCS2025 \nAditya Divyang : 2019UCS2012")
