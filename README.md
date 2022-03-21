@@ -2,7 +2,7 @@
 
 Application hosted on Stream lit link: [Click Here](https://share.streamlit.io/sourabh112/handwriting-hosted/main/server.py)
 
-Screenshot of the Web Application:
+# Screenshot of the Web Application:
 ![Screenshot](./screenshot.png "Web Application Screenshot")
 
 ## Architecture breakdown
@@ -10,7 +10,7 @@ Screenshot of the Web Application:
 1. The training and preprocessing part is in "handwriting recognition.ipynb" file
 2. Webapplication and Predictions are in "Server.py" File
 
-Screenshot of the Comparison between H5 Model and Tflite Model:
+# Screenshot of the Comparison between H5 Model and Tflite Model:
 ![Screenshot](./comparison.jpeg "Comparison Screenshot")
 
 Made By:
