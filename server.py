@@ -40,7 +40,7 @@ def load_image(image_file):
 	return img
 
 st.title("Hand-Writing Recognition")
-st.write("Instructions here")
+st.write("Instructions:\n 1. Upload image of the handwritten image\n2. Image should be in size 128X32 otherwise extra part would be cropped")
 st.subheader("Upload a image with handwritten text")
 image_file = st.file_uploader("Upload Images", type=["png","jpg","jpeg"])
 
@@ -59,3 +59,5 @@ if image_file is not None:
     decoded = K.get_value(K.ctc_decode(pred, input_length=np.ones(pred.shape[0])*pred.shape[1], greedy=True)[0][0])
     print(num_to_label(decoded[0]))
     st.subheader(num_to_label(decoded[0]))
+
+st.write("\n\n\n\n Made By:\nSourabh : 2019UCS2025 \nAditya Divyang : 2019UCS2012")
